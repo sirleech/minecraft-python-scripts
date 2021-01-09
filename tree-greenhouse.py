@@ -9,15 +9,16 @@ x, y, z = mc.entity.getPos(SonarNeedle)
 
 #canopy size
 size = 20
+height = size/1
 
 #offset from player
 off = 0
 #glass
-mc.setBlocks(x + off, y, z+ off, x+size, y+size/2, z+size, 20)
+mc.setBlocks(x + off, y, z+ off, x+size, y+height, z+size, 20)
 #glowstone
-mc.setBlocks(x + off, y, z+ off, x+size, y, z+size, 89)
+mc.setBlocks(x + off, y, z+ off, x+size, y, z+size, 138)
 #air
-mc.setBlocks(x+off+1, y+1, z+off+1, x+size-1, y+size/2-1, z+size-1, 0)
+mc.setBlocks(x+off+1, y+1, z+off+1, x+size-1, y+height-1, z+size-1, 0)
 #grass=2
 mc.setBlocks(x+off+1, y+1, z+off+1, x+size-1, y+1, z+size-1, 2)
 #saplings
