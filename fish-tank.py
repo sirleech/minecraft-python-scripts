@@ -20,8 +20,11 @@ height = 8 * factor
 #glass = 20
 mc.setBlocks(x, y, z, x+length, y+height, z+width, 20)
 
-# cut out the inside
+# fill with water
 mc.setBlocks(x+1, y+1, z+1, x+length-1, y+height, z+width-1, 8)
+
+# or empty
+# mc.setBlocks(x+1, y+1, z+1, x+length-1, y+height, z+width-1, 0)
 
 #sand
 mc.setBlocks(x+1, y+1, z+1, x+length-1, y+3, z+width-1, 12)
