@@ -23,5 +23,5 @@ mc.setBlocks(x, y, z, x+length, y+height, z+width, 20)
 # cut out the inside
 mc.setBlocks(x+1, y+1, z+1, x+length-1, y+height, z+width-1, 8)
 
-# tnt
-#mc.setBlocks(x+1, y+1, z+1, x+5, y+5, z+5, 46, 1)
+#sand
+mc.setBlocks(x+1, y+1, z+1, x+length-1, y+3, z+width-1, 12)
